@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#11110f" />
+  <meta name="robots" content="noindex" />
+  <title>Page not found | Pratyush Das</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link
+    rel="preload"
+    href="/assets/fonts/inter-latin-wght-normal.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <script>
+    try {
+      const savedTheme = window.localStorage.getItem('pratyush-profile-theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (error) {
+      // The dark default remains available when storage is restricted.
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/styles.css?v=19" />
+</head>
+<body class="error-page">
+  <main class="error-main">
+    <p class="site-identity">
+      Hi, I&apos;m Pratyush<br />
+      <span>Graphic designer, Odisha</span>
+    </p>
+    <h1>404</h1>
+    <a class="error-return" href="/" aria-label="Return to the profile">&uarr;</a>
+  </main>
+</body>
+</html>
