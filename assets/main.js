@@ -2,6 +2,7 @@ const root = document.documentElement;
 const themeButton = document.querySelector('[data-theme-switch]');
 const themeIcon = document.querySelector('[data-theme-icon]');
 const resumeButton = document.querySelector('[data-resume-button]');
+const scrollTopLink = document.querySelector('[data-scroll-top]');
 const viewPanels = Array.from(document.querySelectorAll('[data-view-panel]'));
 const themeMeta = document.querySelector('meta[name="theme-color"]');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -84,6 +85,15 @@ const setView = (nextView) => {
 
 resumeButton?.addEventListener('click', () => {
   setView(activeView === 'record' ? 'narrative' : 'record');
+});
+
+scrollTopLink?.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.history.replaceState(null, '', '#top');
+  window.scrollTo({
+    top: 0,
+    behavior: reduceMotion.matches ? 'auto' : 'smooth',
+  });
 });
 
 initializeView();

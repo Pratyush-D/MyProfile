@@ -355,7 +355,7 @@ a {
 }
 
 .narrative-panel p {
-  max-width: 38ch;
+  max-width: 42ch;
   font-size: 2.4rem;
   font-weight: 520;
   line-height: 1.32;
@@ -388,7 +388,7 @@ a {
 
 .copy-break {
   display: inline-block;
-  margin-inline: 0.34em;
+  margin-inline: 0;
   color: var(--hot);
   font-weight: 800;
   white-space: nowrap;
@@ -447,7 +447,7 @@ a {
 }
 
 .recognition-list span {
-  max-width: 28ch;
+  max-width: none;
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.4;
