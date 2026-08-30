@@ -2,22 +2,6 @@
 
 Static profile and resume for [pratyushdas.in](https://pratyushdas.in/).
 
-## Local preview
-
-From this directory, run:
-
-```sh
-python3 -m http.server 8765
-```
-
-Then open `http://localhost:8765/`.
-
-## Deployment
-
-The site has no build step. GitHub Pages should publish the repository root
-from the `main` branch. The `CNAME` file declares `pratyushdas.in` as the
-custom domain, and `.nojekyll` keeps all static assets untouched.
-
 ## Font
 
 Inter and Geist are self-hosted as Latin variable WOFF2 files. Their SIL Open
