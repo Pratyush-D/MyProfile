@@ -1,6 +1,7 @@
 const root = document.documentElement;
 const themeButton = document.querySelector('[data-theme-switch]');
-const themeIcon = document.querySelector('[data-theme-icon]');
+const themeSun = document.querySelector('[data-theme-sun]');
+const themeMoon = document.querySelector('[data-theme-moon]');
 const resumeButton = document.querySelector('[data-resume-button]');
 const scrollTopLink = document.querySelector('[data-scroll-top]');
 const viewPanels = Array.from(document.querySelectorAll('[data-view-panel]'));
@@ -16,7 +17,8 @@ const setTheme = (theme, persist = false) => {
   const themeAction = isDark ? 'Switch to light theme' : 'Switch to dark theme';
   themeButton?.setAttribute('aria-label', themeAction);
   themeButton?.setAttribute('title', themeAction);
-  if (themeIcon) themeIcon.textContent = String.fromCodePoint(isDark ? 0x263c : 0x263e);
+  themeSun?.toggleAttribute('hidden', !isDark);
+  themeMoon?.toggleAttribute('hidden', isDark);
 
   if (themeMeta) {
     themeMeta.content = isDark ? '#11110f' : '#f1f1eb';

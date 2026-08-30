@@ -58,7 +58,7 @@
       // The dark default remains available when storage is restricted.
     }
   </script>
-  <link rel="stylesheet" href="assets/styles.css?v=23" />
+  <link rel="stylesheet" href="assets/styles.css?v=24" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -98,7 +98,13 @@
         title="Switch to light theme"
         data-theme-switch
       >
-        <span aria-hidden="true" data-theme-icon>&#9788;</span>
+        <span class="theme-icon" aria-hidden="true">
+          <svg class="theme-sun" data-theme-sun viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+          </svg>
+          <span class="theme-moon" data-theme-moon hidden>&#9790;</span>
+        </span>
       </button>
     </div>
   </header>
@@ -227,12 +233,18 @@
 
   <footer class="footer">
     <div class="footer-links">
-      <a href="mailto:pratyush@eastcoastmedia.in">Email</a>
+      <a class="footer-email" href="mailto:pratyush@eastcoastmedia.in">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter">
+          <rect x="2" y="4" width="20" height="16" />
+          <path d="m22 7-8.99 5.73a2 2 0 0 1-2.01 0L2 7" />
+        </svg>
+        <span>Email</span>
+      </a>
       <a href="https://github.com/Pratyush-D" rel="me">GitHub</a>
     </div>
     <a class="footer-top" href="#top" aria-label="Return to the beginning" data-scroll-top>&uarr;</a>
   </footer>
 
-  <script src="assets/main.js?v=7"></script>
+  <script src="assets/main.js?v=9"></script>
 </body>
 </html>
