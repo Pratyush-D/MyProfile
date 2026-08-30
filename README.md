@@ -20,8 +20,9 @@ custom domain, and `.nojekyll` keeps all static assets untouched.
 
 ## Font
 
-Inter is self-hosted as a Latin variable WOFF2 file. Its SIL Open Font License
-is included at `assets/fonts/OFL.txt`.
+Inter and Geist are self-hosted as Latin variable WOFF2 files. Their SIL Open
+Font Licenses are included at `assets/fonts/OFL.txt` and
+`assets/fonts/GEIST-OFL.txt`.
 
 Unless otherwise stated, the site content and design are copyright Pratyush
 Das. All rights reserved.
