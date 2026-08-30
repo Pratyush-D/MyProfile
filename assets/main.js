@@ -45,7 +45,7 @@ let isSwitching = false;
 const initializeView = () => {
   const showRecord = activeView === 'record';
   resumeButton?.setAttribute('aria-pressed', String(showRecord));
-  resumeButton?.setAttribute('aria-label', showRecord ? 'Hide resume' : 'Show resume');
+  resumeButton?.setAttribute('aria-label', showRecord ? 'Show biography' : 'Show experience');
 
   viewPanels.forEach((panel) => {
     panel.hidden = panel.dataset.viewPanel !== activeView;
@@ -62,7 +62,7 @@ const setView = (nextView) => {
   isSwitching = true;
   const showRecord = nextView === 'record';
   resumeButton?.setAttribute('aria-pressed', String(showRecord));
-  resumeButton?.setAttribute('aria-label', showRecord ? 'Hide resume' : 'Show resume');
+  resumeButton?.setAttribute('aria-label', showRecord ? 'Show biography' : 'Show experience');
   currentPanel.classList.add('is-leaving');
 
   const finishSwitch = () => {

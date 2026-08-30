@@ -315,10 +315,9 @@ a {
   background: transparent;
   color: var(--ink);
   cursor: pointer;
-  font-size: 0.74rem;
-  font-weight: 760;
+  font-size: 0.78rem;
+  font-weight: 720;
   line-height: 1;
-  text-transform: uppercase;
   transition: background-color 220ms ease, color 220ms ease;
 }
 
@@ -530,6 +529,17 @@ a {
   grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
   align-items: baseline;
   gap: 32px;
+}
+
+.education-institution {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+.education-institution span {
+  font-weight: 500;
 }
 
 .footer {
