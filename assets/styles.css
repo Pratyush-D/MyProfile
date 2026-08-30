@@ -380,7 +380,7 @@ a {
 
 .narrative-panel time {
   color: inherit;
-  font-weight: 780;
+  font-weight: inherit;
 }
 
 .narrative-panel a {
