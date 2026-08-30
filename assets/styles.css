@@ -591,10 +591,11 @@ a {
 }
 
 .footer-email svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   flex: 0 0 auto;
   stroke-width: 2;
+  transform: translateY(-1px);
 }
 
 .footer a {
