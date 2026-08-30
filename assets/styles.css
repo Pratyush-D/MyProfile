@@ -584,9 +584,12 @@ a {
   gap: 34px;
 }
 
-.footer-email {
+.footer-links > a {
   display: inline-flex;
   align-items: center;
+}
+
+.footer-email {
   gap: 0.5em;
 }
 
